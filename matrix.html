@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Matrix Designer</title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <h1>Matrix Color Designer</h1>
+        <div id="matrix_box" class="matrix">
+            <table id="matrix_table">
+            </table>
+        </div>
+        <div id="color-picker" class="color-picker">
+            <table>
+                <tr>
+                    <th>Red</th>
+                    <td><input type="number" name="red" id="red" min="0" max="255" value=255></td>
+                </tr>
+                <tr>
+                    <th>Green</th>
+                    <td> <input type="number" name="green" id="green" min="0" max="255" value=255></td>
+                </tr>
+                <tr>
+                    <th>Blue</th>
+                    <td><input type="number" name="blue" id="blue" min="0" max="255" value=255></td>
+                </tr>
+            </table>
+            <button onclick="populateMatrix()">Generate Python Code</button>
+        </div>
+        <div id="colors" class="colors">
+            <ul id="color-list"></ul>
+        </div>
+        <script src="matrix.js"></script>
+    </body>
+</html>

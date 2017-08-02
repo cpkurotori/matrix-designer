@@ -1,0 +1,46 @@
+.matrix table{
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+.matrix td{
+    width: 64px;
+    height: 64px;
+    border: 1px dashed grey;
+}
+
+.matrix{
+    display: inline-block;
+    width:75%;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.color-picker{
+    display: inline-block;
+    width:20%;
+    vertical-align: middle;
+}
+
+.color-picker th{
+    font-size: 20px;
+}
+
+.color-picker input{
+    width: 40px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.colors li{
+    font-size: 20px;
+    padding-top:4px;
+    padding-bottom: 4px;
+    word-wrap: break-word;
+}
+
+.colors ul {
+    list-style-type: none;
+}
