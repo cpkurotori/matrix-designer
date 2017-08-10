@@ -12,12 +12,16 @@
     </head>
     <body>
         <h1>Matrix Color Designer</h1>
+        <div id="size">
+            Width: <input onchange="createTable()" id="width" type="number" min=1 max=16 value=8><br>
+            Height: <input onchange="createTable()" id="height" type="number" min=1 max=16 value=8><br>
+        </div>
         <div id="matrix_box" class="matrix">
             <table id="matrix_table">
             </table>
         </div>
         <div id="color-picker" class="color-picker">
-            <div id="colorSelector"><div style="background-color: #0000ff"></div></div>
+            <div id="colorSelector"><div style="background-color: #0000ff"></div></div><br>
             <!--<table>-->
             <!--    <tr>-->
             <!--        <th>Red</th>-->
@@ -33,10 +37,24 @@
             <!--    </tr>-->
             <!--</table>-->
             <!--<div id="sample" class="sample"></div>-->
-            <button width=100% onclick="populateMatrix()">Generate Python Code</button>
+            <button onclick="javascript:fillAll()">Fill Background</button>
+            <button onclick="javascript:clearBack()">Clear Background</button>
+            <button width=100% onclick="javascript:populateMatrix()">Generate Python Code</button>
         </div>
-        <div id="colors" class="colors">
-            <ul id="color-list"></ul>
+        <!--<div id="colors" class="colors">-->
+        <!--    <ul id="color-list"></ul>-->
+        <!--</div>-->
+        <div id="loadImage">
+            <textarea id="load" rows="8" cols="50">width = 8
+height = 8
+a = (0,0,0)
+b = (221,237,0)
+c = (26,255,0)
+d = (171,7,7)
+e = (28,255,7)
+f = (171,89,7)
+image = [a,a,a,b,a,a,a,a,a,a,c,c,d,a,a,a,a,a,c,c,c,a,a,a,a,c,d,c,c,d,a,a,a,c,c,c,c,c,a,a,c,c,c,c,d,c,c,a,c,d,c,e,c,c,c,a,a,a,a,f,a,a,a,a]</textarea><br>
+        <button onclick="javascrip:loadImage()">Load Image</button><span id="error" style="color:red"></span>
         </div>
         <script src="js/matrix.js"></script>
     </body>

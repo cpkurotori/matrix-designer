@@ -4,8 +4,8 @@
 }
 
 .matrix td{
-    width: 64px;
-    height: 64px;
+    width: 40px;
+    height: 40px;
     border: 1px dashed grey;
 }
 
@@ -49,12 +49,7 @@ h1 {
     list-style-type: none;
 }
 
-.sample {
-    width: 64px ;
-    height: 64px;
-    border: 1px solid black;
-    margin: 0 auto;
-}
+
 
 #colorSelector {
 	position: relative;
@@ -69,4 +64,9 @@ h1 {
 	width: 30px;
 	height: 30px;
 	background: url(../images/select.png) center;
+}
+
+#loadImage {
+    margin: 20px;
+    text-align: center;
 }
